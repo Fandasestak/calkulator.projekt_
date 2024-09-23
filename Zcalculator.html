@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLS , calculator</title>
+    <link rel="shortcut icon" href="01TOOLS.favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Tadesign.css">
+    <script src="1.all.js"></script>
+</head>
+<body>
+    
+    <div class="top_btnCreate">
+        <button class="create" onclick="create()"><img src="createAccount.view.png" alt="create account" class="createimg" width="25px" height="auto">create</button>
+    </div>
+<!--  -->
+    <div class="top_btn">
+        <button class="Login" onclick="login()"><img src="loginpicture.view.png" alt="login" class="loginimg" width="25px" height="auto">login</button>
+    </div>
+
+<nav id="nav-navigation">
+    <a href="TOOLS.html" class="logo"><img src="0TOOLS.logo.png" alt="logo" width="100rem" height="auto"></a>
+    <div class="navbar_div">
+        <a href="Zgenerators.html" class="navbar_generators">generators</a>
+        <a href="Zcalculator.html" class="navbar_calculator">calculator</a>
+        <a href="Zweather.html" class="navbar_weather">weather</a>
+        <a href="Ztransfefcurrency.html" class="navbar_transferCurrency">transfer currency</a>
+        <a href="Zto-dolist.html" class="navbar_toDoList">to-do list</a>
+        <a href="Zstopwatch.html" class="navbar_stopwatch">stopwatch</a>
+        <button class="premium" onclick="premiumBtn()">✨Premium</button>
+        <!-- zde budou další funkce  -->
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="picure_div">
+    <img src="calculatorPicture.view.png" alt="calculator" class="picture">
+    <div class="text_picture">calculator</div>
+    <a href="#cal" class="picture_odkaz" onclick="smoothScroll(event, '#cal')">ˇ</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="copy_button">
+    <button onclick="copyText()" class="copy_button">copy</button>
+</div>
+<div class="calculator" id="cal">
+    <input type="text" id="display" disabled>
+    <br>
+    <button onclick="appendNumber('1')" class="jedna">1</button>
+    <button onclick="appendNumber('2')" class="dva">2</button>
+    <button onclick="appendNumber('3')" class="tri">3</button>
+    <button onclick="setOperator('+')" class="plus">+</button>
+    <br>
+    <button onclick="appendNumber('4')" class="ctyri">4</button>
+    <button onclick="appendNumber('5')" class="pet">5</button>
+    <button onclick="appendNumber('6')" class="sest">6</button>
+    <button onclick="setOperator('-')" class="minus">-</button>
+    <br>
+    <button onclick="appendNumber('7')" class="sedm">7</button>
+    <button onclick="appendNumber('8')" class="osm">8</button>
+    <button onclick="appendNumber('9')" class="devet">9</button>
+    <button onclick="setOperator('*')" class="krat">*</button>
+    <br>
+    <div class="bottom_calculator">
+        <button onclick="appendNumber('0')" class="nula">0</button>
+        <button onclick="calculate()" class="rovnase">=</button>
+        <button onclick="clearDisplay()" class="vymazat">C</button>
+        <button onclick="setOperator('/')" class="deleno">/</button>
+    </div>
+</div>
+
+<!-- hotovo -->
+<footer>
+    <div class="footer_div">
+        <p><a href="https://github.com/Fandasestak/TOOLS/blob/main/introduction" class="odkaz_na_github"><img src="removebg.png" alt="logoGitHub" width="50px" height="auto" class="imgfooter"><br>rights reserved by TOOLS</a></p>
+    </div>
+</footer>
+</body>
+</html>
+
+<!-- udělat responzivitu  -->
